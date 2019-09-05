@@ -1,0 +1,11 @@
+{
+  "cards": [
+    {
+      "card": {
+        "title": "КОТИК",
+        "description": "Этот котик самый прекрасный",
+        "imageId": "/static/s1200.jpg"
+      }
+    }
+  ]
+}
