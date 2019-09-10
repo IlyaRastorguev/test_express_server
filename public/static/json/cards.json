@@ -1,11 +1,20 @@
 {
-  "cards": [
+  "data": [
     {
-      "card": {
-        "title": "КОТИК",
-        "description": "Этот котик самый прекрасный",
-        "imageId": "/static/s1200.jpg"
-      }
+      "description": "Этот котик самый прекрасный",
+      "url": "/static/images/1.jpg"
+    },
+    {
+      "description": "Этот котик самый прекрасный",
+      "url": "/static/images/2.jpg"
+    },
+    {
+      "description": "Этот котик самый прекрасный",
+      "url": "/static/images/3.jpg"
+    },
+    {
+      "description": "Этот котик самый прекрасный",
+      "url": "/static/images/4.jpeg"
     }
   ]
 }

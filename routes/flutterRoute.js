@@ -9,7 +9,7 @@ router.get('/start', function(req, res, next) {
     res.send(json);
 });
 
-router.get('/kittens', function(req, res, next) {
+router.get('/images', function(req, res, next) {
     res.send(kittens);
 });
 
