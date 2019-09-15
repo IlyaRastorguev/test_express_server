@@ -19,7 +19,16 @@ router.get('/theme', function(req, res, next) {
     var vibrant = funcs.color.getAccentLocal(theme['data']['url']);
     console.log(req);
     vibrant.then((pallete) => {
-        theme['data']['accent'] = req.query.isDark === 'true' ? pallete['DarkVibrant'].hex : pallete['LightVibrant'].hex;
+        if (req.query.isDark === 'true') {
+            theme.data.r = pallete.DarkVibrant.r;
+            theme.data.g = pallete.DarkVibrant.g;
+            theme.data.b = pallete.DarkVibrant.b;
+        } else {
+            theme.data.r = pallete.LightVibrant.r;
+            theme.data.g = pallete.LightVibrant.g;
+            theme.data.b = pallete.LightVibrant.b;
+        }
+        
         res.send(theme);
     });
 });
